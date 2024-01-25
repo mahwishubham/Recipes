@@ -1,0 +1,162 @@
+body {
+  background-image: url("https://img.freepik.com/premium-photo/food-cooking-background-stone-texture-with-sea-salt-pepper-garlic-parsley-light-grey-abstract-food-background-empty-space-text-can-be-used-food-posters-design-menu-top-view_253362-16400.jpg");
+  background-size: cover;
+}
+
+.header {
+  text-align: left;
+  margin: 75px 0 -45px 30px;
+  font-family: fantasy;
+  font-size: 25pt;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+div.mycontainer, div.mycontainer2 {
+  margin: 0 75px 25px 75px;
+  display: grid;
+  gap: 100px;
+}
+
+.header1, .header2 {
+  text-align: center;
+  font-style: oblique;
+  background-color: #e4eef2;
+}
+
+.add-recipe, .recipe-name, .ingredients, .steps, .recipes {
+  border: 3px solid #555;
+  border-radius: 4px;
+  margin: 0 25px;
+  padding: 12px 20px;
+}
+
+.image {
+  padding: 12px 20px;
+  margin: 0px 25px 0px 25px;
+  border: 3px solid #555;
+  border-radius: 4px;
+}
+
+textarea {
+  width: auto;
+  height: 150px;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+#submit {
+  vertical-align: middle;
+  margin: 25px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #95c1c4;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#submit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#submit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#submit:hover span {
+  padding-right: 25px;
+}
+
+#submit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.recipe {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.recipe h2 {
+  color: #333;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.recipe ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.recipe ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.recipe p {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.recipe img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.edit-button, .delete-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 20px 0 0 10px;
+    font-size: 20pt;
+  }
+
+  div.mycontainer, div.mycontainer2 {
+    grid-template-columns: 1fr;
