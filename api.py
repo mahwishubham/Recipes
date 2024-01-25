@@ -2,7 +2,7 @@
 API for Recipe Keeper Application.
 
 This module provides endpoints for CRUD operations on recipes.
-It uses a JSON file for storage, and FastAPI for the web server.
+It use a JSON file for storage, and FastAPI for the web server.
 """
 
 import os.path
